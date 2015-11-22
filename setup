@@ -1,0 +1,21 @@
+#!/bin/bash
+set -euo pipefail
+
+if [ "$#" -ne 2 ]; then
+  SCRIPT=`basename $0`
+  echo "Usage: $SCRIPT <username> <email>"
+  exit 1
+fi
+
+if [ -f ~/.gitconfig ]; then
+    echo 'Aborting: ~/.gitconfig already exists'
+    exit 2
+fi
+
+CONFIG_SOURCE_DIR=`dirname $0 | xargs realpath -e`
+CONFIG_SOURCE_FILE=$CONFIG_SOURCE_DIR/.gitconfig
+
+ln -s $CONFIG_SOURCE_FILE ~/.gitconfig
+
+git config --global user.email $2
+git config --global user.name "$1"
