@@ -1,0 +1,12 @@
+[alias]
+    alias = !git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
+    hist = log --graph --pretty=format:'%Cred%h%Creset %C(bold blue)<%an>%Creset%C(bold yellow)%d%Creset %Cgreen(%cr)%Creset%n%s'
+    histfull = log --graph --name-status --pretty=format:'%Cred%h%Creset %C(bold blue)<%an>%Creset%C(bold yellow)%d%Creset %Cgreen(%cr)%Creset%n%s%n'
+[branch]
+    autoSetupRebase = always
+[color]
+    ui = auto
+[core]
+    editor = vim
+[tag]
+    sort = version:refname
