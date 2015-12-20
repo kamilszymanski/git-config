@@ -1,3 +1,5 @@
+[advice]
+    statusHints = false
 [alias]
     alias = !git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
     hist = log --graph --pretty=format:'%Cred%h%Creset %C(bold blue)<%an>%Creset%C(bold yellow)%d%Creset %Cgreen(%cr)%Creset%n%s'
@@ -8,7 +10,8 @@
     ui = auto
 [core]
     editor = vim
+[rebase]
+    autoSquash = true
+    autoStash = true
 [tag]
     sort = version:refname
-[advice]
-    statusHints = false
