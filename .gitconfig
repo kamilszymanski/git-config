@@ -13,5 +13,7 @@
 [rebase]
     autoSquash = true
     autoStash = true
+[stash]
+    showPatch = true
 [tag]
     sort = version:refname
