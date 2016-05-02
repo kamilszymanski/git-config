@@ -1,4 +1,6 @@
-Minimal git config with few additional aliases for hosts that do not have [tig](http://jonas.nitro.dk/tig/) installed
+Minimal git config.
+
+Additionally it configures [tig](http://jonas.nitro.dk/tig/) and sets few aliases that may come in handy when [tig](http://jonas.nitro.dk/tig/) is not installed.
 
 #### Setup
 

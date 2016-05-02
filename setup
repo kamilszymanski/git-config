@@ -13,7 +13,7 @@ if [ -f ~/.gitconfig ]; then
 fi
 
 CONFIG_SOURCE_DIR=`dirname $0 | xargs realpath -e`
-CONFIG_SOURCE_FILE=$CONFIG_SOURCE_DIR/.gitconfig
+CONFIG_SOURCE_FILE=$CONFIG_SOURCE_DIR/gitconfig
 
 ln -s $CONFIG_SOURCE_FILE ~/.gitconfig
 

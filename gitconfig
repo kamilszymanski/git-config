@@ -17,3 +17,7 @@
     showPatch = true
 [tag]
     sort = version:refname
+[tig]
+    ignore-case = true
+    tab-size = 4
+    vertical-split = false
