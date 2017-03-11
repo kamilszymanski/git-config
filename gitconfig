@@ -12,6 +12,8 @@
     editor = vim
 [merge]
     ff = only
+[push]
+    default = current
 [rebase]
     autoSquash = true
     autoStash = true
